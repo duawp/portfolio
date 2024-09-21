@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Experience</title>
+    <style>
+        /* Global Dark Theme Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+        header .logo {
+            font-size: 2rem;
+            color: #ffab00;
+            text-decoration: none;
+        }
+        nav a {
+            color: #e0e0e0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a.active {
+            color: #ffab00;
+        }
+        nav a:hover {
+            color: #ffab00;
+        }
+
+        /* Experience Section */
+        .experience {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .experience h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffab00;
+        }
+        .experience p {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            color: #cccccc;
+        }
+
+        /* Experience Cards Layout */
+        .experience-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .experience-card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+        .experience-card:hover {
+            transform: scale(1.05);
+        }
+        .experience-card i {
+            font-size: 3rem;
+            color: #ffab00;
+            margin-bottom: 10px;
+        }
+        .experience-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .experience-card p {
+            font-size: 1rem;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+        .experience-card span {
+            display: block;
+            font-size: 0.9rem;
+            color: #ffab00;
+            margin-top: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 20px;
+            }
+            .experience h1 {
+                font-size: 2rem;
+            }
+            .experience p {
+                font-size: 1rem;
+            }
+            .experience-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">𝙈𝙖𝙡𝙚𝙠'𝙨 𝙋𝙤𝙧𝙩𝙛𝙤𝙡𝙞𝙤 || Мое портфолио</a>
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="projects.html"><i class="fa-solid fa-folder"></i> Projects</a>
+            <a href="skills.html"><i class="fa-solid fa-tools"></i> Skills</a>
+            <a href="experience.html" class="active"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        </nav>
+    </header>
+
+    <section class="experience">
+        <h1>My Experience</h1>
+        <p>𝙃𝙚𝙧𝙚 𝙞𝙨 𝙖 𝙡𝙞𝙨𝙩 𝙤𝙛 𝙢𝙮 𝙥𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡 𝙖𝙣𝙙 𝙚𝙙𝙪𝙘𝙖𝙩𝙞𝙤𝙣𝙖𝙡 𝙚𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙚𝙨:</p>
+
+        <div class="experience-container">
+            <!-- Experience 1: Job -->
+            <div class="experience-card">
+                <i class="fa-solid fa-building"></i>
+                <h3>Cybersecurity Researcher</h3>
+                <p>Worked on penetration testing, vulnerability assessments, and malware analysis in a supervised and legal environment.</p>
+                <span>2022 - Present</span>
+            </div>
+
+            <!-- Experience 2: Internship -->
+            <div class="experience-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Software Development Intern</h3>
+                <p>Developed and optimized software tools in Python and C++ for secure data management and encryption.</p>
+                <span>2021 - 2022</span>
+            </div>
+
+            <!-- Experience 3: SMU University -->
+            <div class="experience-card">
+                <i class="fa-solid fa-university"></i>
+                <h3>SMU University</h3>
+                <p>Pursuing a degree in computer science with a focus on cybersecurity, gaining hands-on experience with real-world challenges.</p>
+                <span>2024 - Present</span>
+            </div>
+
+            <!-- Experience 4: Business Administration at Medipol University -->
+            <div class="experience-card">
+                <i class="fa-solid fa-university"></i>
+                <h3>Medipol University</h3>
+                <p>Currently studying Business Administration, gaining insights into business management and operations to complement technical skills.</p>
+                <span>2021 - 2023</span>
+            </div>
+
+            <!-- Experience 5: Freelance -->
+            <div class="experience-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Freelance Developer</h3>
+                <p>Built custom applications and scripts to automate workflows, focusing on web development and security optimization.</p>
+                <span>2019 - Present</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
