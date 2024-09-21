@@ -10,6 +10,37 @@
     font-family: 'Poppins', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* Desktop styles */
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for phones */
+    body {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    body {
+      font-size: 16px;
+    }
+  }
+
 .projects h1 {
     font-size: 4rem; /* Increase size for the heading */
 }
