@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="giga.png" type="image/x-icon">
-    <br><br><br><br><br><title>Experience</title>
+    <br<br><br><br><br><br<br><br><br><br><title>Experience</title>
     <style>
         /* Global Dark Theme Styles */
-        body {
+        html, body {
             font-family: 'Arial', sans-serif;
+            height: 125;
             margin: 0;
             padding: 0;
             background-color: #121212;
@@ -18,17 +19,17 @@
             overflow-y: auto;
         }
         header {
-    background-color: #1e1e1e;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    transition: top 0.3s ease; /* Smooth transition */
-    overflow-y: auto;
-}
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            margin: 0; /* Ensure no margin above the header */
+            }
+
 
         header .logo {
             font-size: 2rem;
@@ -108,7 +109,22 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             header {
-                padding: 10px 20px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            margin: 0; /* Ensure no margin above the header */
+            }
+
+            header .logo {
+                font-size: 2rem;
+                 color: #ffab00;
+                text-decoration: none;
+
             }
             .experience h1 {
                 font-size: 2rem;

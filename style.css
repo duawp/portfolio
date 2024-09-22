@@ -17,10 +17,30 @@ img {
 
 /* Desktop styles */
 .container {
+    width: 400px;
+    height: 225px;
+    float: right;
+     position: relative;
+     top: -500px;
+    flex: center;
+    margin: 500px;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
   }
   
+.container gif {
+        position: absolute; /* Allows precise placement */
+        top: 50px;  /* Adjust this value to move the GIF up or down */
+        right: 30px; /* Adjust this value to move the GIF left or right */
+        width: 150px;  /* Adjust the width of the GIF */
+        height: 150px; /* Adjust the height of the GIF */
+        z-index: 2;    /* Ensures the GIF stays on top of the video */  
+}
+
+iframe {
+    z-index: 1; /* Ensures the video stays behind the GIF */
+}
+
 
 
 .projects h1 {
@@ -47,7 +67,7 @@ body{
     overflow-x: hidden;
     background-color: black;
     color: white;
-    overflow: hidden; /* Disables scrolling */
+    overflow-y: auto; /* Disables scrolling */
     height: 100%; 
 }
 
@@ -68,12 +88,13 @@ header{
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: transparent;
+    background-color: #000000;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
+    margin: 0;
 }
 
 header nav {
@@ -157,11 +178,13 @@ span{
     box-shadow: none; /* Removed the box-shadow (border) */
     cursor: pointer;
     transition: 0.2s linear;
+    z-index: 100;
 }
 
 .home-img img:hover {
     font-size: 1.8rem;
     font-weight: 500;
+    z-index: 100;
 }
 
 .social-icons a{

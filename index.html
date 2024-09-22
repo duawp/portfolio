@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
-    <link rel="icon" href="final-image.png" type="image/x-icon">
+    <link rel="icon" href="result.png" type="image/x-icon">
 </head>
 
 <body>
@@ -37,6 +37,7 @@
                 <a href="https://x.com/FrankZane95" onclick="playSound()"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.instagram.com/duawp_/" onclick="playSound()"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://t.me/scrimbeats" onclick="playSound()"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.youtube.com/@duawp" onclick="playSound()"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </section>
@@ -44,14 +45,23 @@
     <!-- Audio element for the click sound -->
     <audio id="clickSound" src="hovering.mp3" preload="auto"></audio>
 
+
+     <div class="container" style="position: relative; display: flex; justify-content: flex-end;">
+        <img src="gg.gif" alt="My YouTube videos" style="position: absolute; top: -140px; left: -250px; width: 140px; height: 100px; z-index: 1;">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/IzUM4xjUGFY?si=r7MG0TEHOPJkOnOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: 0; margin-right: 40px;"></iframe>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/dXsketClH80?si=KfRj9O5dK_UvcJtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: -1; margin-right: -140px; margin-left: 90px;"></iframe>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/9SlBKGsYSs8?si=WHs2Azd-T-sMnKYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: -2; margin-left: 250px;"></iframe>
+        <a href="https://www.youtube.com/@duawp?sub_confirmation=1" target="_blank">
+        <img src="subscrb.gif" alt="My YouTube videos" style="position: absolute; top: 250px; left: -350px; width: 500px; height: 281px; z-index: 5;">
+        </a>  
     <script>
         // Function to play the sound
         function playSound() {
             var sound = document.getElementById("clickSound");
             sound.play();
         }
+        
     </script>
-
 </body>
 </html>
 
