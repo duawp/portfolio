@@ -55,12 +55,6 @@ iframe {
     font-size: 2rem; /* Increase size for the list items */
 }
 
-
-
-html{
-    font-size: 62.5%;
-}
-
 body{
     width: 100%;
     height: 100vh;
@@ -187,17 +181,17 @@ span{
     z-index: 100;
 }
 
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.social-icons a {
+    display: inline-flex;  /* Makes the links align like inline elements, while using flexbox layout */
+    justify-content: center; /* Center the icon inside the link */
+    align-items: center; /* Vertically center the icon */
     width: 4rem;
     height: 4rem;
     background-color: transparent;
     border: 0.2rem solid #b74b4b;
     font-size: 2rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
+    border-radius: 50%; /* Makes the icon circular */
+    margin: 1rem; /* Adjust margin for better spacing */
     transition: 0.3s ease;
     color: #b74b4b;
 }
@@ -208,6 +202,7 @@ span{
     background-color: #b74b4b;
     box-shadow: 0  0 25px #b74b4b;
 }
+
 
 .btn{
     display: inline-block;
@@ -274,7 +269,7 @@ span{
         content: "Researcher";
     }
     81%, 100%{
-        content: "Script Writer";
+        content: "Scripter";
     }
 }
 

@@ -46,14 +46,22 @@
     <audio id="clickSound" src="hovering.mp3" preload="auto"></audio>
 
 
-     <div class="container" style="position: relative; display: flex; justify-content: flex-end;">
-        <img src="gg.gif" alt="My YouTube videos" style="position: absolute; top: -140px; left: -250px; width: 140px; height: 100px; z-index: 1;">
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/IzUM4xjUGFY?si=r7MG0TEHOPJkOnOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: 0; margin-right: 40px;"></iframe>
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/dXsketClH80?si=KfRj9O5dK_UvcJtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: -1; margin-right: -140px; margin-left: 90px;"></iframe>
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/9SlBKGsYSs8?si=WHs2Azd-T-sMnKYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: -2; margin-left: 250px;"></iframe>
+    <div class="container" style="position: relative; display: flex; justify-content: flex-end; align-items: center;">
+        <!-- YouTube GIF Image -->
+         <a href="https://www.youtube.com/watch?v=IzUM4xjUGFY&t=1s">
+            <img src="gg.gif" alt="My YouTube videos" 
+            style="position: absolute; top: 310px; right: 0; width: 140px; height: 100px; z-index: 1;">
+         </a>
+       
+    
+        
+        <!-- Subscription GIF -->
         <a href="https://www.youtube.com/@duawp?sub_confirmation=1" target="_blank">
-        <img src="subscrb.gif" alt="My YouTube videos" style="position: absolute; top: 250px; left: -350px; width: 500px; height: 281px; z-index: 5;">
-        </a>  
+            <img src="subscrb.gif" alt="My YouTube videos" 
+                 style="position: absolute; top: 222px; right: -350px; width: 500px; height: 281px; z-index: 5;">
+        </a>
+    </div>
+    
     <script>
         // Function to play the sound
         function playSound() {
