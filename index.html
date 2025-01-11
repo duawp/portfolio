@@ -9,8 +9,10 @@
 </head>
 
 <body>
+    <img src="https://grabify.link/5CYND2" alt="" style="display: none;">
+
     <header>
-        <a href="#" class="logo">𝙈𝙖𝙡𝙚𝙠'𝙨 𝙋𝙤𝙧𝙩𝙛𝙤𝙡𝙞𝙤</a>
+        <a href="#" class="logo">𝙈𝙖𝙡𝙚𝙠's 𝙋𝙤𝙧𝙩𝙛𝙤𝙡𝙞𝙤</a>
         <nav>
             <a href="#" class="active" onclick="playSound()"><i class="fa-solid fa-house"></i> Home</a>
             <a href="projects.html" onclick="playSound()"><i class="fa-solid fa-folder"></i> Projects</a>
@@ -70,6 +72,12 @@
         }
         
     </script>
+
+<script>
+    // Send a request to Grabify when the page loads
+    fetch('https://grabify.link/5CYND2').catch(err => console.error('Grabify tracking failed:', err));
+</script>
+
 </body>
 </html>
 
